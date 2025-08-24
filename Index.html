@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #0f3d2e 0%, #1a5c3a 50%, #d4af37 100%);
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header {
+      background: #14532d;
+      color: #d4af37;
+      padding: 20px 0;
+      box-shadow: 0 4px 12px rgba(15,61,46,0.2);
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #1a5c3a;
+    }
+    .hero {
+      background: linear-gradient(120deg, #1a5c3a 60%, #d4af37 100%);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    section {
+      padding: 40px 10vw 40px 5vw;
+      background: rgba(255,255,255,0.65);
+      border-radius: 32px 12px 32px 12px;
+      margin: 40px auto 20px auto;
+      max-width: 900px;
+      box-shadow: 0 4px 32px 0 rgba(15,61,46,0.04);
+      border: none;
+      transition: background 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    }
+    section:nth-child(even) {
+      background: rgba(212,175,55,0.12);
+      border-radius: 12px 32px 12px 32px;
+      margin-left: 10vw;
+      margin-right: 0;
+    }
+    .hero {
+      border-radius: 0 0 32px 32px;
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+    .skills ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    #resume h2, #resume h3, #resume h4 {
+      color: #14532d;
+    }
+    #resume ul li {
+      color: #0f3d2e;
+    }
+    /* Ambient Waves Effect */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -1;
+      background: url('https://www.transparenttextures.com/patterns/wave.png');
+      opacity: 0.15;
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="max-width: 900px; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+  <h1>Ivey Nixon IV</h1>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>I'm glad you're here! Explore my work and skills in data science.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate data scientist with experience in analyzing data, building models, and delivering insights.
+    </p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Pandas & NumPy</li>
+      <li>Machine Learning (scikit-learn, TensorFlow)</li>
+      <li>Data Visualization (Matplotlib, Seaborn)</li>
+      <li>SQL</li>
+      <li>Statistics & Data Analysis</li>
+    </ul>
+  </section>
+
+  <section id="resume" style="background:#f9f9f9; padding:40px 20px;">
+    <h2>Resume</h2>
+    <h3>Ivey Nixon IV</h3>
+    <p>Email: <a href="mailto:Hardstyleteddy25@gmail.com">Hardstyleteddy25@gmail.com</a> | Phone: 480-559-0814 | Location: Phoenix, AZ | GitHub: <a href="https://github.com/KnawtiKing" target="_blank">KnawtiKing</a></p>
+    <h4>Professional Summary</h4>
+    <p>Dedicated and detail-oriented professional with experience in data science, security leadership, and team management. Skilled in Python, data analysis, and building efficient workflows. Passionate about leveraging technology to drive impactful results.</p>
+    <h4>Skills</h4>
+    <ul>
+      <li><strong>Programming:</strong> Python, Pandas, NumPy, SQL</li>
+      <li><strong>Data Analysis & Visualization:</strong> Matplotlib, Seaborn</li>
+      <li><strong>Tools:</strong> Git, Jupyter Notebook, VS Code</li>
+      <li><strong>Other:</strong> Leadership, Report Writing, Process Improvement</li>
+    </ul>
+    <h4>Experience</h4>
+    <p><strong>Team Lead – Security Operations</strong><br>
+    Falken Industries & BGI Security | 2023 – Present</p>
+    <ul>
+      <li>Managed on-site security operations, including patrols, incident response, and tenant relations.</li>
+      <li>Oversaw team performance, reporting, and compliance with safety protocols.</li>
+      <li>Provided digital documentation and process improvements to enhance operational efficiency.</li>
+    </ul>
+    <p><strong>Martial Arts Instructor & Gym Operations</strong><br>
+    Various Locations | 2013 – 2024</p>
+    <ul>
+      <li>Trained clients in martial arts techniques, improving skills and confidence.</li>
+      <li>Handled scheduling, client management, and administrative duties.</li>
+      <li>Developed strong interpersonal and leadership skills.</li>
+    </ul>
+    <h4>Education</h4>
+    <ul>
+      <li>Data Science Bootcamp – TripleTen (In Progress)</li>
+      <li>aPHR Certification – HR (In Progress)</li>
+    </ul>
+  </section>
+</body>
+</html>
